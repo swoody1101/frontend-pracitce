@@ -3,12 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>연습문제 3</title>
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      caption-side: bottom;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    .healing {
+      background-color: #eee;
+    }
+  </style>
 </head>
 <body>
-  <table border="1">
+  <table>
     <caption>2019 국민 독서실태</caption>
+    <colgroup>
+      <col class="healing">
+      <col>
+      <col>
+      <col>
+    </colgroup>
     <thead>
-      <tr>
+      <tr class="healing">
         <th>구분</th>
         <th>성인</th>
         <th>독서자</th>
