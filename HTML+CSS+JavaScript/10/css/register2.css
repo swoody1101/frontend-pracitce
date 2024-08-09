@@ -72,3 +72,8 @@ body {
 	border: none;
 	margin-bottom: 0;
 }
+
+#signup button:hover {
+	background-color: #222;
+	color: #fff;
+}
