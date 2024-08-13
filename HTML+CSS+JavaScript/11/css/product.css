@@ -14,6 +14,7 @@ h1 {
   padding: 0;
   margin: 10px;
   overflow: hidden;
+  position: relative;
 }
 .prod-list img {
   margin:0;
@@ -21,3 +22,22 @@ h1 {
   float:left;
   z-index:5;
 } 
+.prod-list .caption {
+  position: absolute;
+  top: 200px;
+  width: 300px;
+  height: 200px;
+  padding-top:20px;
+  background: rgb(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.6 ease-in-out;
+  z-index: 10;
+}
+.prod-list li:hover .caption {
+  opacity: 1;
+  transform: translateY(-200px);
+}
+.prod-list .caption h2, .prod-list .caption p {
+  color: #fff;
+  text-align: center;
+}
