@@ -13,7 +13,13 @@
       border:1px solid #ccc;
       border-radius:50%;      
       box-shadow: 5px 5px 30px 2px #000;
-    }
+			animation: rotate 3s infinite;
+    }	
+		@keyframes rotate{
+			from { transform: perspective(200px) rotateY(0deg) }
+			50% { transform: perspective(200px) rotateY(-180deg) }
+			to { transform: perspective(200px) rotateY(-360deg) }
+		}
 	</style>
 </head>
 
