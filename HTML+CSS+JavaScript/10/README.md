@@ -4,7 +4,7 @@
 
 <body>
   <table>
-    <caption><b>연결 산텍자</b></caption>
+    <caption><b>연결 선택자</b></caption>
     <thead>
       <tr>
         <th>종류</th>
