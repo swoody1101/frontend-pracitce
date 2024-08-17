@@ -1,5 +1,5 @@
 <header>
-  <h2>12장 정리</h2>
+  <h2>14장 정리</h2>
 </header>
 
 <body>
