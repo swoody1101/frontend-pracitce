@@ -12,10 +12,25 @@
     <p>공부할 주제를 기록해 보세요</p>
     <form action="">
       <input type="text" id="subject" autofocus>
-      <button>추가</button>
+      <button onclick="newRegister(); return false;">추가</button>
     </form>
     <hr>  
     <ul id="itemList"></ul>  
   </div>
+  <script>
+    function newRegister() {
+      var newItem = document.createElement("li");
+      var subject = document.querySelector("#subject");
+      var newText = document.createTextNode(subject.value);
+
+      newItem.appendChild(newText);
+      
+      var itemList = document.querySelector("#itemList");
+      itemList.appendChild(newItem);
+      // itemList.insertBefore(newItem, itemList.childNodes[0]);
+
+      subject.value="";
+    }
+  </script>
 </body>
 </html>
