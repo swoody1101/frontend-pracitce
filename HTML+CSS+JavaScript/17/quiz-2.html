@@ -4,8 +4,57 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>연습문제 2</title>
+	<style>
+		form {
+			margin-bottom: 20px;
+		}
+		input[type="text"] {
+			width: 30px;
+			height: 20px;
+			text-align: center;
+		}
+		button {
+			margin-left: 10px;
+		}
+		table, td {
+			border: 1px solid #ccc;
+			border-collapse: collapse;
+		}
+		td {
+			padding: 10px;
+		}
+
+	</style>
 </head>
 <body>
+	<form>
+		<input type="text" id="row">행
+		<input type="text" id="column">열
+		<button onclick="createTable(); return false;">작성</button>
+	</form>
+	<div id="contents"></div>
+
+	<script>
+		function createTable() {
+			var rCount = document.getElementById("row").value;
+			var cCount = document.getElementById("column").value;
+
+			var newTable = document.createElement("table");
+			for (i = 0; i < rCount; i++) {
+				var newRow = document.createElement("tr");
+				for (j = 0; j < cCount; j++) {
+					var newColmn = document.createElement("td");
+					var newText = document.createTextNode(i + ", " + j);
+					newColmn.appendChild(newText);
+					newRow.appendChild(newColmn);
+				}
+				newTable.appendChild(newRow);
+			}
+
+			var contents = document.getElementById("contents");
+			contents.appendChild(newTable);			
+		}
+	</script>
 	
 </body>
-</html>ㅣ
+</html>
