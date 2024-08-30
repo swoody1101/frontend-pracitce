@@ -123,14 +123,6 @@ nav {
   float: left;
 }
 
-#prev {
-  left: 0;
-}
-
-#next {
-  right: 0;
-}
-
 button {
   position: absolute;
   height: 100%;
@@ -142,6 +134,14 @@ button {
   font-weight: 800;
   font-size: 24px;
   opacity: 0.5;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
 }
 
 button:hover {
