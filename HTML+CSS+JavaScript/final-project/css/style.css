@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 #container {
   margin: 0 auto;
   width: 1200px;
@@ -44,7 +48,32 @@ nav {
   float: right;
   width: 900px;
   height: 100px;
-  background-color: green;
+  padding-top: 40px;
+}
+
+#topMenu {
+  height: 60px;
+}
+
+#topMenu > li {
+  float: left;
+}
+
+#topMenu > li > a {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 1px #07c;
+  padding: 20px 60px;
+}
+
+#topMenu > li > a > span {
+  font-size: 0.5em;
+}
+
+#topMenu > li > a:hover {
+  color: #000;
+  text-shadow: 0 -1px #07c;
 }
 
 /* 이미지 슬라이드 쇼 영역 */
