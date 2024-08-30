@@ -123,6 +123,38 @@ nav {
   float: left;
 }
 
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+button {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+  color: #000;
+  font-weight: 800;
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+button:hover {
+  background-color: #222;
+  color: #fff;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
 /* 콘텐츠 영역 */
 #contents {
   width: 100%;
