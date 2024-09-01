@@ -277,5 +277,52 @@ footer {
   clear: both;
   width: 100%;
   height: 100px;
-  background-color: gray;
+  border-top: 2px solid #222;
 }
+
+#bottomMenu {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+#bottomMenu ul {
+  margin-top: 15px;
+}
+
+#bottomMenu ul li {
+  float: left;
+  padding: 5px 20px;
+  border-right: 1px solid #ddd;
+}
+
+#bottomMenu ul li:last-child {
+  border-right: none;
+}
+
+#bottomMenu ul li a, #bottomMenu ul li a:visited {
+  font-size: 15px;
+  color: #666;
+}
+
+#sns {
+  position: absolute;
+  right: 0;
+}
+
+#sns ul li {
+  border: none;
+  padding: 5px;
+}
+
+#company {
+  clear: left;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+#company p {
+  font-size: 14px;
+  color: #aaa;
+}
+
