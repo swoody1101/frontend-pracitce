@@ -110,7 +110,7 @@
       </tr>
       <tr>
         <td>색상 이름</td>
-        <td colspan="2">red, yellow, black고 같은 색상 이름을 사용합니다.</td>
+        <td colspan="2">red, yellow, black과 같은 색상 이름을 사용합니다.</td>
       </tr>
     </tbody>
   </table>
