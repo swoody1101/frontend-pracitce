@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Ajax </title>
+  <script src="js/jquery.js"></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
+        dataType: "xml",
+        success: function (data) {
+          console.log(data);
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrap"></div>
+</body>
+
+</html>
