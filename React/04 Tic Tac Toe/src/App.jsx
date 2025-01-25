@@ -5,9 +5,9 @@ import GameBoard from "./assets/components/GameBoard.jsx";
 import Log from "./assets/components/Log.jsx";
 
 function deriveActivePlayer(gameTurns) {
-  let currentPlayer = gameTurns[0].player;
+  let currentPlayer = "X";
 
-  if (prevTurns.length > 0 && prevTurns[0].player == "X") {
+  if (gameTurns.length > 0 && gameTurns[0].player == "X") {
     currentPlayer = "O";
   }
 
@@ -21,7 +21,7 @@ function App() {
 
   function handleSelectSquare(rowIndex, colIndex) {
     setGameTurns((prevTurns) => {
-      const currentPlayer = deriveActivePlayer(gameTurns);
+      const currentPlayer = deriveActivePlayer(prevTurns);
 
       const updatedTurns = [
         { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
