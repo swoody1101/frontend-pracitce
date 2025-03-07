@@ -38,7 +38,7 @@ export default function AvailablePlaces({ onSelectPlace }) {
   }, []);
 
   if (error) {
-    return <Error title="An eroor occurred!" message={error.message} />;
+    return <Error title="An error occurred!" message={error.message} />;
   }
 
   return (
