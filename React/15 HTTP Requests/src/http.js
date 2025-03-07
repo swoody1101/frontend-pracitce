@@ -12,7 +12,7 @@ export async function fetchAvailablePlaces() {
 export async function updateUserPlaces(places) {
   const response = await fetch("http://localhost:3000/user-places", {
     method: "PUT",
-    body: JSON.stringify({places: places}),
+    body: JSON.stringify({ places }),
     headers: {
       "Content-Type": "application/json",
     },
@@ -25,4 +25,4 @@ export async function updateUserPlaces(places) {
   }
 
   return resData.message;
-}
+} 
