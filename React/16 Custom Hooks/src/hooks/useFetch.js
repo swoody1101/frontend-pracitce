@@ -10,7 +10,7 @@ export function useFetch(fetchFn, initialValue) {
       setIsFetching(true);
       try {
         const data = await fetchFn();
-        setFetchedData(places);
+        setFetchedData(data);
       } catch (error) {
         setError({ message: error.message || "Failed to fetch data." });
       }
@@ -23,7 +23,8 @@ export function useFetch(fetchFn, initialValue) {
 
   return {
     isFetching,
-    fetchedData,
     error,
+    fetchedData,
+    setFetchedData,
   };
 }
